@@ -1,10 +1,10 @@
 import { type Page } from '@playwright/test';
 
-export class pageBase {
+export class PageBase {
 
     readonly page: Page;
 
-    constructor(page: Page, elementText: string) {
+    constructor(page: Page) {
         this.page = page;
     };
 };
