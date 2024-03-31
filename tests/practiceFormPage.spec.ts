@@ -10,4 +10,7 @@ test.describe('Practice form', () => {
     test('Verify practice form texts', async ({ practiceFormPage }) => {
         await practiceFormPage.verifyText();
     });
+    test.only('Add input text', async ({ practiceFormPage }) => {
+        await practiceFormPage.inputText();
+    });
 });

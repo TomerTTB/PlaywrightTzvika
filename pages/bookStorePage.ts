@@ -1,5 +1,5 @@
 import { type Locator, type Page } from '@playwright/test';
-import { TextElementBuilder } from '../classes/textElementBuilder';
+import { ElementBuilder } from '../classes/ElementBuilder';
 import { PageBase } from '../classes/pageBase';
 import { TextVerifier } from '../classes/textVerifier';
 import { elements } from '../data/bookStoreElements';
@@ -11,7 +11,7 @@ export class BookStorePage extends PageBase {
     //constructor
     constructor(page: Page) {
         super(page);
-        this.myElements = TextElementBuilder.buildElements(page, elements)
+        this.myElements = ElementBuilder.buildElements(page, elements)
     };
 
     //Methods

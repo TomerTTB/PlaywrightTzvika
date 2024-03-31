@@ -1,4 +1,4 @@
-export const elements = [
+export const elementsText = [
     {
         functionType: 'getByText',
         text: 'Practice FormStudent',

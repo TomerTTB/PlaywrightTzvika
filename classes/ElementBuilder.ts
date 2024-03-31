@@ -1,6 +1,6 @@
 import { Page, Locator } from '@playwright/test';
 
-export class TextElementBuilder {
+export class ElementBuilder {
     static buildElements(page: Page,
         elements: { functionType: string; role?, text: string; exact?: boolean }[]): Locator[] {
         const myElements: Locator[] = [];
@@ -15,6 +15,9 @@ export class TextElementBuilder {
                     break;
                 case 'getByRole':
                     currentElement = page.getByRole(params.role, { name: params.text });
+                    break;
+                case 'getByPlaceholder':
+                    currentElement = page.getByPlaceholder(params.text);
             }
             if (currentElement) {
                 myElements.push(currentElement);
