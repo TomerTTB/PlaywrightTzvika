@@ -1,8 +1,6 @@
-import { type Locator, type Page } from '@playwright/test';
-import { ElementBuilder } from '../classes/ElementBuilder';
-import { PageBase } from '../classes/pageBase';
-import { TextVerifier } from '../classes/textVerifier';
-import { elements } from '../data/bookStoreElements';
+import {
+    Locator, Page, ElementBuilder, PageBase, TextVerifier, elements
+} from '../utils/imports.ts';
 
 export class BookStorePage extends PageBase {
     //Variables 

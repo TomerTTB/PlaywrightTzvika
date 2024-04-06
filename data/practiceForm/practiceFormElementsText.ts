@@ -9,7 +9,7 @@ export const elementsText = [
         text: 'Practice Form'
     },
     {
-        functionType: 'getByrole1',
+        functionType: 'getByrole',
         role: 'heading',
         text: 'Student Registration Form'
     },
